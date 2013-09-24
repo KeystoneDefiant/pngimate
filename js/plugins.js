@@ -6,14 +6,14 @@
 		
 		//Set defaults
 		var settings = $.extend({
-			filePath: 			null,		//String - Set path of where the files are
-			sequenceStart: 		1,			//Integer - the first frame number in the sequence
+			filePath: 		null,		//String - Set path of where the files are
+			sequenceStart: 		1,		//Integer - the first frame number in the sequence
 			sequenceEnd: 		null,		//Integer - the last frame number in the sequence
-			loop: 				false,		//Boolean - if we should loop or not
-			autoStyle: 			true,		//Boolean - if we should automatically style the container
-			bufferSize: 		5,			//Integer - Amount of images to have loaded at any given time. Bigger buffers are smoother, but more memory
-			tickSpeed: 			15,			//Integer - Total speed of the animation. Lower numbers are faster
-			fileType: 			"png"		//String - File extension
+			loop: 			false,		//Boolean - if we should loop or not
+			autoStyle: 		true,		//Boolean - if we should automatically style the container
+			bufferSize: 		5,		//Integer - Amount of images to have loaded at any given time. Bigger buffers are smoother, but more memory
+			tickSpeed: 		15,		//Integer - Total speed of the animation. Lower numbers are faster
+			fileType: 		"png"		//String - File extension
 		}, options);
 
 		//INTERNAL
