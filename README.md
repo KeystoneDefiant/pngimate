@@ -13,17 +13,19 @@ The code was originally built as a simple function as a prototype, building in a
 File Structure
 --------------
 /js/main.js - The invoker for the jQuery plugin version
+
 /js/plugins.js - The actual jQuery plugin version of PNGImator
+
 /js/plugins_functionVersion.js - The original version of PNGImator that was a simple function.
 
 
 TODO
 ----
-*More testing on multiple selector types
-*Experimentation with adding a 3DTransform via CSS to see if invoking the GPU on the container makes a difference in render speed
-*Error handling
-*Automatic Frame End detection
-*Play Backwards
-*Sequence Start and Loop Start options, so that you can play a sequence from one spot, but repeat the loop from another
+* More testing on multiple selector types
+* Experimentation with adding a 3DTransform via CSS to see if invoking the GPU on the container makes a difference in render speed
+* Error handling
+* Automatic Frame End detection
+* Play Backwards
+* Sequence Start and Loop Start options, so that you can play a sequence from one spot, but repeat the loop from another
 For instance, the sequence starts on frame 1, but repeats the loop on frame 20.
-*Looping with Yo-Yo effect (play backwards after playing forwards)
+* Looping with Yo-Yo effect (play backwards after playing forwards)
