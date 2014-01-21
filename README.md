@@ -21,19 +21,11 @@ File Structure
 
 TODO
 ----
-<<<<<<< HEAD
 * More testing on multiple selector types
 * Experimentation with adding a 3DTransform via CSS to see if invoking the GPU on the container makes a difference in render speed
 * Error handling
 * Automatic Frame End detection
 * Play Backwards
 * Sequence Start and Loop Start options, so that you can play a sequence from one spot, but repeat the loop from another
-=======
-*More testing on multiple selector types
-*Error handling
-*Automatic Frame End detection
-*Play Backwards
-*Sequence Start and Loop Start options, so that you can play a sequence from one spot, but repeat the loop from another
->>>>>>> Feature-Addition-0.1
 For instance, the sequence starts on frame 1, but repeats the loop on frame 20.
 * Looping with Yo-Yo effect (play backwards after playing forwards)
