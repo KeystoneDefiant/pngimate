@@ -20,7 +20,6 @@ File Structure
 TODO
 ----
 *More testing on multiple selector types
-*Experimentation with adding a 3DTransform via CSS to see if invoking the GPU on the container makes a difference in render speed
 *Error handling
 *Automatic Frame End detection
 *Play Backwards
