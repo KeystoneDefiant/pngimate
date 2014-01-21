@@ -9,11 +9,21 @@
 			filePath: 		null,		//String - Set path of where the files are
 			sequenceStart: 		1,		//Integer - the first frame number in the sequence
 			sequenceEnd: 		null,		//Integer - the last frame number in the sequence
+<<<<<<< HEAD
 			loop: 			false,		//Boolean - if we should loop or not
 			autoStyle: 		true,		//Boolean - if we should automatically style the container
 			bufferSize: 		5,		//Integer - Amount of images to have loaded at any given time. Bigger buffers are smoother, but more memory
 			tickSpeed: 		15,		//Integer - Total speed of the animation. Lower numbers are faster
 			fileType: 		"png"		//String - File extension
+=======
+			loop: 				false,		//Boolean - if we should loop or not
+			autoStyle: 			true,		//Boolean - if we should automatically style the container
+			bufferSize: 		5,			//Integer - Amount of images to have loaded at any given time. Bigger buffers are smoother, but more memory
+			tickSpeed: 			15,			//Integer - Total speed of the animation. Lower numbers are faster
+			fileType: 			"png",		//String - File extension
+			enableGPU: 			false,		//Boolean - Set a 3D transform on the container in order to invoke GPU on supported browsers
+			cssPath: 			"css/pngimate.css", 
+>>>>>>> Feature-Addition-0.1
 		}, options);
 
 		//INTERNAL
@@ -25,6 +35,8 @@
 			targetContainer = $(this);
 
 			targetContainer.html(""); //Clear contents of the container so we have a blank slate
+
+			addCSS(); //Load CSS file dynamically
 
 			for (var i = settings.sequenceStart; i < settings.sequenceStart + settings.bufferSize; i++)
 			{	
@@ -109,6 +121,21 @@
 			{
 				//otherwise, stop looping and we're done.
 				stopAnimation(targetContainer); 
+			}
+		}
+
+		function setGPU(isEnabled){
+			if (isEnabled){
+				targetContainer.addClass("pngimate-gpuAccelerate");
+			}else{
+				targetContainer.removeClass("pngimate-gpuAccelerate");
+			}
+		}
+
+		function addCSS(){
+			//Load the CSS file specified in the settings unless it's already loaded.
+			if (!$("link[href='"+settings.cssPath+"']").length){
+				$('<link rel="stylesheet" type="text/css" href="' + settings.cssPath + '" />').appendTo('head');
 			}
 		}
  

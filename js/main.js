@@ -4,5 +4,6 @@ $("#animcontainer").pngimate({
 	sequenceEnd: 96,
 	loop: true,
 	bufferSize: 5,
-	tickSpeed: 15
+	tickSpeed: 15,
+	enableGPU: true
 });
